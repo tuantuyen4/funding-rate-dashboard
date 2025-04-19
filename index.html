@@ -32,7 +32,7 @@
   <script>
     async function fetchFundingRates() {
       try {
-        const res = await fetch("https://www.mexc.com/futures/api/v1/public/funding_rate");
+        const res = await fetch("https://corsproxy.io/?https://www.mexc.com/futures/api/v1/public/funding_rate");
         const json = await res.json();
         const data = json.data || [];
 
